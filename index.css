@@ -1,0 +1,175 @@
+/*/
+red 901324
+871d2d
+791a29
+
+blue 639fdc
+
+black 30404d
+4a534f
+dark 454c76
+
+off white f3f2f2
+
+cream fff2e7
+
+
+font-family: 'Work Sans', sans-serif;
+ /*/
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    font-family: Arial;
+}
+
+h1{
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+    margin-top: 17vh;
+}
+h14{
+    font-family: 'Work Sans', sans-serif;
+    text-align: left;
+    font-size: 30px;
+    margin-bottom: 2vw;
+    font-weight: bold;
+}
+h1:hover, h2:hover, h3:hover, h14:hover{
+    color: #881111;
+}
+.banner{
+    background-image: url("media/main.png");
+    min-height: 100vh;
+    min-width: 100vw;
+    background-size: cover;
+    position: relative;
+    font-family: 'Work Sans', sans-serif;
+    margin-top: 2vw;
+
+}
+.lastAdded{
+    padding: 1vw 45vw;
+
+}
+h3{
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+    font-size: 25px;
+
+}
+.intro{
+    margin: 1vw 5vw;
+    padding: 2vw 30vw;
+    float: left;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+
+h4{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 35px;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 30px;
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.navbar-content-left {
+    display: flex;
+    align-items: center;
+}
+
+
+.navbar-logo img{
+    height: 5vw;
+}
+
+.navbar-logo:hover {
+    transform: scale(1.05);
+}
+
+
+.navbar-options {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 3vw;
+}
+
+.navbar-options li {
+    margin-right: 2vw;
+}
+
+.navbar-options a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.navbar-options a:hover {
+    color: steelblue;
+}
+
+
+.navbar-buttons a {
+    padding: 8px 15px;
+    margin-left: 15px;
+    text-decoration: none;
+    border: 1px solid #333;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.login-btn {
+    padding: 8px 15px;
+    margin-left: 15px;
+    text-decoration: none;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background-color: #333;
+    color: #fff;
+
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+    color: #333;
+    background-color: lightsteelblue;
+}
+
+
+.register-btn {
+    padding: 8px 15px;
+    margin-left: 15px;
+    text-decoration: none;
+    border: 1px solid #333;
+    border-radius: 4px;
+    color: #333;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.register-btn:hover {
+    background-color: lightsteelblue;
+    color: #fff;
+}
