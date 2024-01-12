@@ -1,3 +1,27 @@
+<?php
+session_start();
+$_SESSION["liname"];
+$liname = $_SESSION["liname"];
+
+$servername = "localhost";
+$username = "89133";
+$password = "#1Geheim!";
+$dbname = "db89133";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Check connection
+if ($conn->connect_error) {
+  $data1 = "Did not connect";
+  echo("<script>console.log('PHP: " . $data1 . "');</script>");
+}
+else {
+  $data2 = "Connected successfully";
+  echo("<script>console.log('PHP: " . $data2 . "');</script>");
+}
+?>
+
 <!DOCTYPE html>
 <html lang="nl-NL">
 
@@ -36,11 +60,22 @@
                 <li><a href="#">Option 3</a></li>
             </ul>
         </div>
+        <!--When user is logged in, the login button will change to the user name and will redirect to account page-->
+        <!--User page not yet implemented-->
+        <?php if (isset($_SESSION["liname"])){ ?>
+            <div class="navbar-buttons">
+            <a href="php/login.php" class="login-btn"><?= $_SESSION["liname"] ?></a>
+            <a href="php/logout_process.php" class="register-btn">Logout</a>
+            </div>
+
+        <!--When not logged in, Login and Register buttons will be shown-->
+        <?php } else { ?>
         <div class="navbar-buttons">
             <a href="php/login.php" class="login-btn">Login</a>
             <a href="php/register.php" class="register-btn">Register</a>
         </div>
     </nav>
+    <?php } ?>
 
 
 </header>
@@ -82,5 +117,7 @@
 
 
 </body>
+
+<script src="javascript/main.js"></script>
 
 </html>
