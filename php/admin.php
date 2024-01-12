@@ -1,19 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>EventCode</title>
+    <title>Admin</title>
     <link rel="icon" type="image/PNG" href="../media/icon1.png">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
     <style>
         body {
             font-family: Arial, sans-serif;
-            padding: 9vw;
-            background-image: url("../media/background2.png");
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            margin: 0;
+            background-color: #f2f2f2;
+
+        }
+
+        .button-logout {
+            background-color: #881111;
+            border: none;
+            color: white;
+            padding: 10px 40px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            margin: 1vw 1vw;
+
+        }
+
+        .button-logout:hover {
+            background-color: #cecece;
+            color: #881111;
+
         }
 
         h2 {
@@ -53,7 +74,7 @@
             background-color: #fff;
             padding: 20px;
             border-radius: 10px;
-            margin: 0 auto;
+            margin: 5vw auto;
             max-width: 400px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19);
         }
@@ -93,13 +114,9 @@
         @media only screen and (max-width: 600px) {
 
             body {
-                background-image: url("../media/mobilebackground.png");
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: 100vw 100vh;
+                background-color: #f2f2f2;
                 overflow-x: hidden;
                 overflow-y: hidden;
-                margin-top: 50vw;
             }
 
             .logo {
@@ -111,7 +128,8 @@
             }
 
             .container {
-                max-width: 60%;
+                max-width: 80%;
+                margin-top: 20vw;
             }
 
             input[type="text"],
@@ -131,17 +149,20 @@
     </style>
 </head>
 <body>
-<a class="home-logo" href="../index.php">
-    <img src="../media/logo.png" class="logo" alt="Your Logo">
-</a>
+<div>
+    <button class="button-logout"><span class="glyphicon glyphicon-log-out"></span>  Logout</button>
+</div>
+
 <div class="container">
-    <h2>Welkom $(name_logged_in)</h2><br>
+    <h2>Creat an event:</h2><br>
     <form action="" method="post">
+        <label for="username">Event name:</label>
+        <input type="text" name="username" required minlength="5" placeholder="Name for the event"><br><br>
 
         <label for="username">Code:</label>
-        <input type="text" name="username" required minlength="5" placeholder="Code you got from the admin"><br><br>
+        <input type="text" name="username" required minlength="5" placeholder="Share this code later"><br><br>
 
-        <input type="submit" value="Find">
+        <input type="submit" value="Save">
     </form>
 </div>
 </body>
