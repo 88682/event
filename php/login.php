@@ -39,7 +39,7 @@
         }
 
         .logo {
-            width: 40%; /* Adjust as needed */
+            width: 40%;
             height: auto;
             max-width: 200px;
             transition: transform 0.3s ease-in-out;
