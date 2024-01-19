@@ -154,7 +154,7 @@ h4{
 
 .login-btn:hover {
     color: #333;
-    background-color: lightsteelblue;
+    background-color: steelblue;
 }
 
 
@@ -170,6 +170,6 @@ h4{
 }
 
 .register-btn:hover {
-    background-color: lightsteelblue;
+    background-color: steelblue;
     color: #fff;
 }

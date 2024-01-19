@@ -159,7 +159,7 @@
         <label for="username">Event name:</label>
         <input type="text" name="username" required minlength="5" placeholder="Name for the event"><br><br>
 
-        <label for="username">Code:</label>
+        <label for="username">Event code:</label>
         <input type="text" name="username" required minlength="5" placeholder="Share this code later"><br><br>
 
         <input type="submit" value="Save">
