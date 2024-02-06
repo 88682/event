@@ -17,11 +17,54 @@ cream fff2e7
 font-family: 'Work Sans', sans-serif;
  /*/
 
+
 body {
     margin: 0;
     overflow-x: hidden;
     font-family: Arial;
 }
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    text-align: left;
+    margin: 10vw 5vw;
+}
+
+.banner-text {
+    max-width: 600px;
+    padding: 60px;
+    text-align: left;
+}
+h19{
+    font-size: 37px;
+    font-weight: bold;
+}
+.banner-button {
+    display: inline-block;
+    padding: 13px 25px;
+    margin-top: 1vw;
+    text-decoration: none;
+    background-color: #88b5f6;
+    border-radius: 5px;
+    font-size: 16px;
+    color: black;
+}
+.banner-button:hover {
+    background-color: #aed0fa;
+}
+
+.banner-img {
+    max-width: 40%;
+    height: auto;
+    margin-left: 3vw;
+}
+
+
+
+
 
 h1{
     font-family: 'Work Sans', sans-serif;
@@ -35,66 +78,22 @@ h14{
     margin-bottom: 2vw;
     font-weight: bold;
 }
-h1:hover, h2:hover, h3:hover, h14:hover{
-    color: #881111;
-}
-.banner{
-    background-image: url("media/main.png");
-    min-height: 100vh;
-    min-width: 100vw;
-    background-size: cover;
-    position: relative;
-    font-family: 'Work Sans', sans-serif;
-    margin-top: 2vw;
 
-}
-.lastAdded{
-    padding: 1vw 45vw;
-
-}
-h3{
-    font-family: 'Work Sans', sans-serif;
-    text-align: center;
-    font-size: 25px;
-
-}
-.intro{
-    margin: 1vw 5vw;
-    padding: 2vw 30vw;
-    float: left;
-    animation: 1s ease-out 0s 1 slideInFromLeft;
-}
-@keyframes slideInFromLeft {
-    from {
-        transform: translateX(-100%);
-    }
-    to {
-        transform: translateX(0);
-    }
-}
-
-
-h4{
-    font-family: 'Work Sans', sans-serif;
-    font-size: 35px;
-}
-
+/* nav */
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 30px;
+    padding: 5px 2vw;
     background-color: #f8f8f8;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
 
 .navbar-content-left {
     display: flex;
     align-items: center;
 }
-
 
 .navbar-logo img{
     height: 5vw;
@@ -115,7 +114,7 @@ h4{
 }
 
 .navbar-options li {
-    margin-right: 2vw;
+    margin-right: 3vw;
 }
 
 .navbar-options a {
@@ -125,9 +124,8 @@ h4{
 }
 
 .navbar-options a:hover {
-    color: steelblue;
+    color: #78a4e5;
 }
-
 
 .navbar-buttons a {
     padding: 8px 15px;
@@ -154,7 +152,7 @@ h4{
 
 .login-btn:hover {
     color: #333;
-    background-color: steelblue;
+    background-color: #aed0fa;
 }
 
 
@@ -170,6 +168,6 @@ h4{
 }
 
 .register-btn:hover {
-    background-color: steelblue;
-    color: #fff;
+    color: #78a4e5;
+    border-color: #9cc2f8;
 }

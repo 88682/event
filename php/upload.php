@@ -9,6 +9,7 @@
         body {
             font-family: Arial, sans-serif;
             margin: 0;
+            background-color: #e5e5e5;
         }
 
         h2 {

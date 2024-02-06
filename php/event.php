@@ -14,7 +14,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&family=Nunito+Sans:opsz,wght@6..12,300&family=Work+Sans:wght@100;200;300;400&display=swap" rel="stylesheet">
 
-
     <title>Event</title>
 </head>
 
@@ -31,7 +30,6 @@
             <ul class="navbar-options">
                 <li><a href="#">Option 1</a></li>
                 <li><a href="#">Option 2</a></li>
-                <li><a href="#">Option 3</a></li>
             </ul>
         </div>
         <div class="navbar-buttons">
@@ -42,154 +40,122 @@
 
 </header>
 
+    <! --  placeholder name -->
 
-<div class="banner"><br><br><br><br>
+    <div class="title-top">
+        <h17>Event Name</h17>
+        <p>Click on the photo you want to download</p>
+    </div>
 
-        <div class="button-container">
+    <div class="banner"><br><br>
+
+
+    <div class="button-container">
             <a href="upload.php" class="modern-button">Upload photo's <i class="fa-solid fa-upload"></i></a>
 
-            <a href="https://example.com" class="modern-button">Download Photo's <i class="fa-solid fa-circle-arrow-down"></i></a>
+            <a href="https://example.com" id="downloadButton" class="modern-button">Download Photo's <i class="fa-solid fa-circle-arrow-down"></i></a>
 
         </div>
 
-    <div class="main">
 
-        <ul class="cards">
-            <li>
-                <a href="" class="card">
-                    <img src="https://i.imgur.com/oYiTqum.jpg" class="card__image" alt="" />
-                    <div class="card__overlay">
-                        <div class="card__header">
-                            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
-                            <img class="card__thumb" src="https://i.imgur.com/7D7I6dI.png" alt="" />
-                            <div class="card__header-text">
-                                <h3 class="card__title">Jessica Parker</h3>
-                                <span class="card__status">1 hour ago</span>
-                            </div>
-                        </div>
-                        <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="" class="card">
-                    <img src="https://i.imgur.com/2DhmtJ4.jpg" class="card__image" alt="" />
-                    <div class="card__overlay">
-                        <div class="card__header">
-                            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
-                            <img class="card__thumb" src="https://i.imgur.com/sjLMNDM.png" alt="" />
-                            <div class="card__header-text">
-                                <h3 class="card__title">kim Cattrall</h3>
-                                <span class="card__status">3 hours ago</span>
-                            </div>
-                        </div>
-                        <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="" class="card">
-                    <img src="https://i.imgur.com/oYiTqum.jpg" class="card__image" alt="" />
-                    <div class="card__overlay">
-                        <div class="card__header">
-                            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
-                            <img class="card__thumb" src="https://i.imgur.com/7D7I6dI.png" alt="" />
-                            <div class="card__header-text">
-                                <h3 class="card__title">Jessica Parker</h3>
-                                <span class="card__tagline">Lorem ipsum dolor sit amet consectetur</span>
-                                <span class="card__status">1 hour ago</span>
-                            </div>
-                        </div>
-                        <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="" class="card">
-                    <img src="https://i.imgur.com/2DhmtJ4.jpg" class="card__image" alt="" />
-                    <div class="card__overlay">
-                        <div class="card__header">
-                            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
-                            <img class="card__thumb" src="https://i.imgur.com/sjLMNDM.png" alt="" />
-                            <div class="card__header-text">
-                                <h3 class="card__title">kim Cattrall</h3>
-                                <span class="card__status">3 hours ago</span>
-                            </div>
-                        </div>
-                        <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="" class="card">
-                    <img src="https://i.imgur.com/oYiTqum.jpg" class="card__image" alt="" />
-                    <div class="card__overlay">
-                        <div class="card__header">
-                            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
-                            <img class="card__thumb" src="https://i.imgur.com/7D7I6dI.png" alt="" />
-                            <div class="card__header-text">
-                                <h3 class="card__title">Jessica Parker</h3>
-                                <span class="card__status">1 hour ago</span>
-                            </div>
-                        </div>
-                        <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="" class="card">
-                    <img src="https://i.imgur.com/2DhmtJ4.jpg" class="card__image" alt="" />
-                    <div class="card__overlay">
-                        <div class="card__header">
-                            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
-                            <img class="card__thumb" src="https://i.imgur.com/sjLMNDM.png" alt="" />
-                            <div class="card__header-text">
-                                <h3 class="card__title">kim Cattrall</h3>
-                                <span class="card__status">3 hours ago</span>
-                            </div>
-                        </div>
-                        <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="" class="card">
-                    <img src="https://i.imgur.com/oYiTqum.jpg" class="card__image" alt="" />
-                    <div class="card__overlay">
-                        <div class="card__header">
-                            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
-                            <img class="card__thumb" src="https://i.imgur.com/7D7I6dI.png" alt="" />
-                            <div class="card__header-text">
-                                <h3 class="card__title">Jessica Parker</h3>
-                                <span class="card__tagline">Lorem ipsum dolor sit amet consectetur</span>
-                                <span class="card__status">1 hour ago</span>
-                            </div>
-                        </div>
-                        <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="" class="card">
-                    <img src="https://i.imgur.com/2DhmtJ4.jpg" class="card__image" alt="" />
-                    <div class="card__overlay">
-                        <div class="card__header">
-                            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
-                            <img class="card__thumb" src="https://i.imgur.com/sjLMNDM.png" alt="" />
-                            <div class="card__header-text">
-                                <h3 class="card__title">kim Cattrall</h3>
-                                <span class="card__status">3 hours ago</span>
-                            </div>
-                        </div>
-                        <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
-                    </div>
-                </a>
-            </li>
-        </ul>
+    <! --  fotos zijn place holders voor nu -->
 
+    <div class="photo-album">
+
+        <div class="photo">
+            <a href="../media/fotos/1.png" download="Photo1">
+                <img src="../media/fotos/1.png" alt="Photo 1">
+            </a>
+            <div class="name-date-container">
+                <p class="name">Name Person</p>
+                <p class="date">date </p>
+            </div>
+        </div>
+
+        <div class="photo">
+            <a href="../media/fotos/2.png" download="Photo2">
+                <img src="../media/fotos/2.png" alt="Photo 2">
+            </a>
+            <div class="name-date-container">
+                <p class="name">Name Person</p>
+                <p class="date">date </p>
+            </div>
+        </div>
+
+        <div class="photo">
+            <a href="../media/fotos/3.png" download="Photo3">
+                <img src="../media/fotos/3.png" alt="Photo 3">
+            </a>
+            <div class="name-date-container">
+                <p class="name">Name Person</p>
+                <p class="date">date </p>
+            </div>
+        </div>
+
+        <div class="photo">
+            <a href="../media/fotos/4.png" download="Photo4">
+                <img src="../media/fotos/4.png" alt="Photo 4">
+            </a>
+            <div class="name-date-container">
+                <p class="name">Name Person</p>
+                <p class="date">date </p>
+            </div>
+        </div>
+
+        <div class="photo">
+            <a href="../media/fotos/5.png" download="Photo5">
+                <img src="../media/fotos/5.png" alt="Photo 5">
+            </a>
+            <div class="name-date-container">
+                <p class="name">Name Person</p>
+                <p class="date">date </p>
+            </div>
+        </div>
+
+        <div class="photo">
+            <a href="../media/fotos/6.png" download="Photo6">
+                <img src="../media/fotos/6.png" alt="Photo 6">
+            </a>
+            <div class="name-date-container">
+                <p class="name">Name Person</p>
+                <p class="date">date </p>
+            </div>
+        </div>
+
+        <div class="photo">
+            <a href="../media/fotos/7.png" download="Photo7">
+                <img src="../media/fotos/7.png" alt="Photo 7">
+            </a>
+            <div class="name-date-container">
+                <p class="name">Name Person</p>
+                <p class="date">date </p>
+            </div>
+        </div>
+
+        <div class="photo">
+            <a href="../media/fotos/8.png" download="Photo8">
+                <img src="../media/fotos/8.png" alt="Photo 8">
+            </a>
+            <div class="name-date-container">
+                <p class="name">Name Person</p>
+                <p class="date">date </p>
+            </div>
+        </div>
+
+        <div class="photo">
+            <a href="../media/fotos/9.png" download="Photo9">
+                <img src="../media/fotos/9.png" alt="Photo 9">
+            </a>
+            <div class="name-date-container">
+                <p class="name">Name Person</p>
+                <p class="date">date </p>
+            </div>
+        </div>
 
 
     </div>
+
+
 
 </div>
 
@@ -198,37 +164,127 @@
 
 
 <style>
+
  body {
         margin: 0;
         overflow-x: hidden;
         font-family: Arial;
     }
 
+
+ /* cards */
+
+ .photo-album {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 1vw;
+     padding: 1vw;
+     justify-content: space-around;
+     margin: 1vw auto;
+ }
+
+ .photo {
+     overflow: hidden;
+     flex: 1 1 calc(33.33% - 30px);
+     max-width: calc(33.33% - 30px);
+     margin: 1vw 1px;
+
+ }
+
+ .photo img {
+     width: 100%;
+     object-fit: cover;
+     border-radius: 5px;
+     height: 20vw;
+ }
+
+ .photo a {
+     position: relative;
+ }
+
+ .photo a::after {
+     content: "Click to Download";
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translateX(-50%);
+     background-color: #333;
+     color: #fff;
+     padding: 5px;
+     border-radius: 5px;
+     opacity: 0;
+     visibility: hidden;
+     transition: opacity 0.3s, visibility 0.3s;
+ }
+
+ .photo a:hover::after {
+     opacity: 1;
+     visibility: visible;
+ }
+
+
+ .name {
+     padding: 10px 25px;
+     color: #333333;
+ }
+
+ .date {
+     float: right;
+     padding: 10px 25px;
+     color: #8c8c8c;
+ }
+
+ .name-date-container {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     border-bottom-left-radius: 20px;
+     border-bottom-right-radius: 20px;
+     border-top-left-radius: 0;
+     border-top-right-radius: 0;
+     max-width: calc(100%);
+     background-color: #f3f3f3;
+ }
+
+ /*****/
+
     h1{
-        font-family: 'Work Sans', sans-serif;
+        font-family: Arial;
         text-align: center;
         margin-top: 17vh;
     }
     h3{
-        font-family: 'Work Sans', sans-serif;
+        font-family: Arial;
         text-align: center;
         font-size: 25px;
 
     }
      h4{
-         font-family: 'Work Sans', sans-serif;
+         font-family: Arial;
          font-size: 35px;
      }
     h14{
-        font-family: 'Work Sans', sans-serif;
+        font-family: Arial;
         text-align: left;
         font-size: 30px;
         margin-bottom: 2vw;
         font-weight: bold;
     }
-    h1:hover, h2:hover, h3:hover, h14:hover{
-        color: #881111;
+
+    .title-top{
+        text-align: center;
+        font-family: Arial;
+        margin-top: 3vw;
     }
+
+     h17{
+         font-family: Arial;
+         font-size: 35px;
+         font-weight: bold;
+     }
+     .title-top p{
+         font-size: 18px;
+     }
 
     .banner{
        margin: auto 10vw;
@@ -241,9 +297,9 @@
      }
 
      .modern-button {
-         background-color: #cecece;
+         background-color: #88b5f6;
          padding: 12px 35px;
-         margin: 1vw 2vw;
+         margin: 2vw 2vw;
          border: none;
          border-radius: 5px;
          cursor: pointer;
@@ -252,15 +308,14 @@
      }
 
      .modern-button:hover {
-         background-color: #a4a4a4;
+         background-color: #aed0fa;
      }
 
-     a{
+      a{
          text-decoration: none;
          display: flex;
          padding: 0;
          font-size: 16px;
-         margin-left: 3vw;
          color: black;
      }
 
@@ -269,141 +324,13 @@
     }
 
 
-    /* cards */
-
- .cards {
-     column-count: 3;
-     column-gap: 2rem;
-     margin: 4rem 5vw;
-     padding: 0;
-     list-style-type: none;
- }
-
- .card {
-     position: relative;
-     display: block;
-     margin-bottom: 2rem;
-     break-inside: avoid;
-     overflow: hidden;
-     text-decoration: none;
-     page-break-inside: avoid;
- }
-
- .card__image {
-     width: 100%;
-     height: auto;
- }
-
- .card__overlay {
-     position: absolute;
-     bottom: 0;
-     left: 0;
-     right: 0;
-     z-index: 1;
-     border-radius: calc(var(--curve) * 1px);
-     background-color: var(--surface-color);
-     transform: translateY(100%);
-     transition: .2s ease-in-out;
- }
-
- .card:hover .card__overlay {
-     transform: translateY(0);
- }
-
- .card__header {
-     position: relative;
-     display: flex;
-     align-items: center;
-     gap: 2em;
-     padding: 2em;
-     border-radius: calc(var(--curve) * 1px) 0 0 0;
-     background-color: var(--surface-color);
-     transform: translateY(-100%);
-     transition: .2s ease-in-out;
- }
-
- .card__arc {
-     width: 80px;
-     height: 80px;
-     position: absolute;
-     bottom: 100%;
-     right: 0;
-     z-index: 1;
- }
-
-
- .card:hover .card__header {
-     transform: translateY(0);
- }
-
- .card__thumb {
-     flex-shrink: 0;
-     width: 50px;
-     height: 50px;
-     border-radius: 50%;
- }
-
- .card__title {
-     font-size: 1em;
-     margin: 0 0 .3em;
-     color: #6A515E;
- }
-
- .card__tagline {
-     display: block;
-     margin: 1em 0;
-     font-size: .8em;
-     color: #D7BDCA;
- }
-
- .card__status {
-     font-size: .8em;
-     color: #D7BDCA;
- }
-
- .card__description {
-     padding: 0 2em 2em;
-     margin: 0;
-     color: #D7BDCA;
-     display: -webkit-box;
-     -webkit-box-orient: vertical;
-     -webkit-line-clamp: 3;
-     overflow: hidden;
- }
-
-
-
- .card__description:hover
- {
-     padding: 0 2em 2em;
-     margin: 0;
-     color: #D7BDCA;
-     display: -webkit-box;
-     -webkit-box-orient: vertical;
-     -webkit-line-clamp: 3;
-     overflow: hidden;
-     background-color: #333333;
- }
-
-
-
-
- @keyframes slideInFromLeft {
-        from {
-            transform: translateX(-100%);
-        }
-        to {
-            transform: translateX(0);
-        }
-    }
-
-
+ /* nav */
 
     .navbar {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 5px 30px;
+        padding: 1px 40px;
         background-color: #f8f8f8;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
@@ -434,7 +361,7 @@
     }
 
     .navbar-options li {
-        margin-right: 2vw;
+        margin-right: 3vw;
     }
 
     .navbar-options a {
@@ -444,7 +371,7 @@
     }
 
     .navbar-options a:hover {
-        color: steelblue;
+        color: #78a4e5;
     }
 
 
@@ -461,19 +388,70 @@
 
     .register-btn {
         padding: 8px 15px;
-        margin-left: 15px;
+        margin-right: 4vw;
         text-decoration: none;
         border: 1px solid #333;
         border-radius: 4px;
-        color: #333;
+        color: #dedede;
+        background-color: #333;
         font-weight: bold;
         transition: all 0.3s ease;
     }
 
     .register-btn:hover {
-        background-color: black;
-        color: #fff;
+        color: #79aae8;
+        background-color: #f5f5f5;
+        font-weight: bold;
+        border-color: #aed0fa;
     }
+
+ /* Responsive Styles */
+
+ @media only screen and (max-width: 600px) {
+
+    .navbar{
+        padding: 1px 10px;
+    }
+
+     .navbar-logo img {
+         margin-right: 1vw;
+         width: 20vw;
+         height: 20vw;
+     }
+
+     .navbar-options a{
+         padding: 1px 15px;
+     }
+
+     .title-top{
+         margin-top: 10vw;
+     }
+
+     .photo {
+         flex: 1 1 calc(100% - 1px);
+         max-width: calc(100% - 1px);
+     }
+
+     .photo img {
+         margin-top: 5vw;
+         width: 100%;
+         object-fit: cover;
+         border-radius: 5px;
+         height: 90vw;
+     }
+
+     .modern-button  {
+         background-color: #aed0fa;
+         padding: 5px 25px;
+         border: none;
+         border-radius: 5px;
+         font-size: 16px;
+     }
+
+
+ }
+
+
 
 </style>
 </body>

@@ -33,7 +33,6 @@
             <ul class="navbar-options">
                 <li><a href="#">Option 1</a></li>
                 <li><a href="#">Option 2</a></li>
-                <li><a href="#">Option 3</a></li>
             </ul>
         </div>
         <div class="navbar-buttons">
@@ -43,7 +42,30 @@
     </nav>
 
 
-</header>
+    </header>
+
+
+
+
+
+
+    <div class="banner">
+        <div class="banner-text">
+            <h19>Your Banner</h19>
+            <p>Additional description or information can go here. Additional description or information can go here.
+                Additional description or information can go here Additional description or information can go here</p>
+            <a href="#" class="banner-button">Start now ..  <i class="fa-solid fa-camera-retro"></i></a>
+        </div>
+        <img src="media/fotos/3.png" alt="Banner Image" class="banner-img">
+    </div>
+
+
+
+
+
+
+
+
 
 
    <div class="banner"><br><br><br><br>
