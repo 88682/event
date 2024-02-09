@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&family=Nunito+Sans:opsz,wght@6..12,300&family=Work+Sans:wght@100;200;300;400&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="index.css" />
-
+    <script src="javascript/styling.js"></script>
 
     <title>EventLens</title>
 </head>
@@ -30,10 +30,7 @@
                     <img src="media/logo.png"  class="navbar-logo" alt="Your Logo">
                 </a>
             </div>
-            <ul class="navbar-options">
-                <li><a href="#">Option 1</a></li>
-                <li><a href="#">Option 2</a></li>
-            </ul>
+
         </div>
         <div class="navbar-buttons">
             <a href="php/login.php" class="login-btn">Login</a>
@@ -47,41 +44,129 @@
 
 
 
+<br>
+    <div class="banner">
+        <div class="banner-text">
+            <h19>Snap, Share, Remember with Event Lens</h19>
+            <p>Welcome to Event Lens – where every moment becomes a shared experience! With our platform, you can effortlessly capture and share.
+                Event Lens makes it easy to snap, share, and cherish every moment with your favorite people. </p>
+                <p>Join us and turn every occasion into a lasting memory!</p>
+            <a href="php/login.php" class="banner-button">Start now ..  <i class="fa-solid fa-camera-retro"></i></a>
+        </div>
+        <img src="media/banner.png" alt="Banner Image" class="banner-img">
+    </div><br>
+
+
+
+
+
+
+<main>
+
+    <h1>Why EventLens</h1>
+    <p  class="why-us">We've designed this website especially for non-techies, ensuring it's very easy to use for everyone </p><br>
+
+        <div class="grid-container-skill">
+            <div id="gradient-border"  class="grid-item-skill">
+                <i class="fa-solid fa-bolt"></i><br><br>
+                <h4><b>Extremely Easy to Use</b></h4>
+                <p> Using a secure code, you can access the album. from there you can upload,
+                    download and view.</p>
+
+            </div>
+
+            <div class="grid-item-skill">
+                <i class="fa-solid fa-lock"></i></i><br><br>
+                <h4><b>Secure and Private</b></h4>
+                <p>We value your privacy,
+                    ensuring that only you and your chosen friends have access to your photos.
+                </p>
+
+            </div>
+
+            <div class="grid-item-skill">
+                <i class="fa-solid fa-cloud"></i><br><br>
+                <h4><b>Digital Album</b></h4>
+                <p>All photos are automatically saved in
+                   a digital album for you to access at any time.
+                </p>
+
+            </div>
+
+            <div class="grid-item-skill">
+                <i class="fa-solid fa-download"></i><br><br>
+                <h4><b>One-click Download</b></h4>
+                <p>With just one click, you can download any photo to your device or cloud storage.
+                </p>
+            </div>
+
+
+
+
+        </div><br><br><br>
+
+
+
+
 
 
     <div class="banner">
+        <img src="media/mid-img.png" alt="mid Image" class="mid-img">
         <div class="banner-text">
-            <h19>Your Banner</h19>
-            <p>Additional description or information can go here. Additional description or information can go here.
-                Additional description or information can go here Additional description or information can go here</p>
-            <a href="#" class="banner-button">Start now ..  <i class="fa-solid fa-camera-retro"></i></a>
+            <h2>Never let another memory slip away <i class="fa-solid fa-wand-magic-sparkles"></i></h2>
+            <p> You'll be inspired to pick up your camera and start snapping like never before.
+                Our intuitive interface makes sharing photos with friends a breeze, creating a vibrant tapestry of shared experiences that will be
+                cherished
+                for years to come.</p>
+            <p>
+                every moment becomes a story waiting to be told. From birthdays to vacations, reunions to everyday adventures,
+                our platform empowers you to capture, share, and relive life's precious moments with friends effortlessly.</p>
+
+
+            <p>
+                Don't wait for the perfect moment – start creating it today with Event Lens. Join us, and let's embark on a journey of discovery,
+                laughter, and connection through the power of photography.
+            </p>
         </div>
-        <img src="media/fotos/3.png" alt="Banner Image" class="banner-img">
-    </div>
+
+    </div><br>
 
 
 
 
+    <a href="php/login.php" class="start-btn">Start creating   <i class="fa-solid fa-arrow-right"></i></a><br>
+
+
+
+        <div class="slider">
+            <div class="slide-container">
+                <div class="slide">
+                    <img src="media/slide/1.png" alt="Image 1">
+                </div>
+                <div class="slide">
+                    <img src="media/slide/2.png" alt="Image 2">
+                </div>
+                <div class="slide">
+                    <img src="media/slide/3.png" alt="Image 3">
+                </div>
+
+                <div class="slide">
+                    <img src="media/slide/4.png" alt="Image 4">
+                </div>
+                <div class="slide">
+                    <img src="media/slide/5.png" alt="Image 5">
+                </div>
+                <div class="slide">
+                    <img src="media/slide/6.png" alt="Image 6">
+                </div>
+            </div>
+        </div>
+
+    </main>
 
 
 
 
-
-
-   <div class="banner"><br><br><br><br>
-       <div class="intro">
-       <h4 style="text-shadow: -1px 0 whitesmoke, 0 1px whitesmoke, 1px 0 whitesmoke, 0 -1px whitesmoke;">Stamps Treasures Collection</h4>
-       <p style="text-shadow: -1px 0 whitesmoke, 0 1px whitesmoke, 1px 0 whitesmoke, 0 -1px whitesmoke;">Welcome to our stamp collection! Explore a world of tiny treasures with big stories. Discover and purchase stamps ranging from common to Super rare. Start your journey into stamp collecting today!</p>
-       </div>
-       <h3>Last Added</h3>
-       <div class="lastAdded">
-       <a href="collection.php" target="_blank"><img src="media/post15.png" class="product-mainn1"></a>
-       <p>Christmas Island</p>
-       <p>1pc</p>
-       <p><i class="fa-solid fa-star"></i>Super Rare </p>
-       <p> <i class="fa-solid fa-euro-sign"></i> 1.10</p>
-       </div>
-   </div>
 
 
 
@@ -89,18 +174,18 @@
     <br>
     <hr>
     <div class="flex-containerfooter">
-        <div class="flex-itemfooter"><i class="fa-regular fa-envelope"></i>: stamp-treasures@info.nl</div>
+        <div class="flex-itemfooter"><i class="fa-regular fa-envelope"></i>: info@eventlens.nl</div>
         <div class="flex-itemfooter"><i class="fa-solid fa-phone"></i>: 0612345678</div>
-        <div class="flex-itemfooter"><i class="fa-brands fa-facebook"></i>: stamp-treasures.facebook</div>
-        <div class="flex-itemfooter"><i class="fa-brands fa-instagram"></i>: stamp-treasures.instagram</div>
-
+        <div class="flex-itemfooter"><i class="fa-brands fa-facebook"></i>: facebook@eventlens</div>
+        <div class="flex-itemfooter"><i class="fa-brands fa-instagram"></i>: insta@eventlens</div>
+        <div class="flex-itemfooter">   <i class="fa-brands fa-whatsapp"></i>: +3161234567</div>
 
     </div>
 
-
-    <p class="rechten">© Mariam Chamseddin-2023 All rights reserved</p>
+   <p class="rechten">© EventLens-2024 All rights reserved</p>
     <br>
 </footer>
+
 
 
 </body>

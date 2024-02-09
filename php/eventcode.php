@@ -8,7 +8,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            padding: 9vw;
+            padding: 5vw;
             background-image: url("../media/background2.png");
             background-position: center;
             background-repeat: no-repeat;
@@ -39,7 +39,7 @@
         }
 
         .logo {
-            width: 40%; /* Adjust as needed */
+            width: 40%;
             height: auto;
             max-width: 200px;
             transition: transform 0.3s ease-in-out;
@@ -99,7 +99,8 @@
                 background-size: 100vw 100vh;
                 overflow-x: hidden;
                 overflow-y: hidden;
-                margin-top: 50vw;
+                margin-top: 40vw;
+                background-color: #000000;
             }
 
             .logo {

@@ -22,6 +22,7 @@ body {
     margin: 0;
     overflow-x: hidden;
     font-family: Arial;
+    color: #333333;
 }
 
 .banner {
@@ -30,7 +31,7 @@ body {
     align-items: center;
     color: #333;
     text-align: left;
-    margin: 10vw 5vw;
+    margin: 8vw 5vw;
 }
 
 .banner-text {
@@ -38,10 +39,31 @@ body {
     padding: 60px;
     text-align: left;
 }
+
+h1{
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 7vh;
+    font-weight: bold;
+}
+h2{
+    font-family: sans-serif;
+    font-weight: bold;
+     margin-bottom: 2vw;
+}
+h14{
+    font-family: sans-serif;
+    text-align: left;
+    font-size: 30px;
+    margin-bottom: 2vw;
+    font-weight: bold;
+}
+
 h19{
     font-size: 37px;
     font-weight: bold;
 }
+
 .banner-button {
     display: inline-block;
     padding: 13px 25px;
@@ -57,27 +79,100 @@ h19{
 }
 
 .banner-img {
-    max-width: 40%;
+    max-width: 45%;
     height: auto;
     margin-left: 3vw;
 }
 
+/* midtext*/
 
-
-
-
-h1{
-    font-family: 'Work Sans', sans-serif;
-    text-align: center;
-    margin-top: 17vh;
+.mid-text{
+    padding: 2vw 30vw;
 }
-h14{
-    font-family: 'Work Sans', sans-serif;
-    text-align: left;
-    font-size: 30px;
+.mid-img {
+    max-width: 40%;
+    height: auto;
+    margin-left: 3vw;
+    border-radius: 10px;
+}
+
+/*slider*/
+
+
+.slider {
+    width: 100%;
+    height: 20%;
+    overflow: hidden;
+}
+
+.slide-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    flex: 0 0 33.33%;
+}
+
+.slide img {
+    width: 87%;
+    height: auto;
+    margin-left: 1vw;
+}
+
+.start-btn {
+    display: inline-block;
+    padding: 13px 35px;
+    margin-top: 3vw ;
+    margin-right: 5vw;
     margin-bottom: 2vw;
-    font-weight: bold;
+    text-decoration: none;
+    background-color: #88b5f6;
+    border-radius: 5px;
+    font-size: 16px;
+    color: black;
+    float: right;
 }
+.start-btn:hover {
+    background-color: #aed0fa;
+}
+
+
+/* cards */
+
+
+.grid-container-skill {
+    display: grid;
+    margin: 3vw 5vw;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1vw;
+    color: #333333;
+}
+
+.grid-item-skill {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(147, 147, 147, 0.1);
+    text-align: center;
+    margin-left: 3vw;
+    border: rgba(244, 244, 245, 0.29) groove 1px;
+}
+
+.grid-item-skill i {
+    font-size: 3rem;
+    color: #77a9f1;
+    margin-bottom: 10px;
+}
+
+.why-us{
+    text-align: center;
+    margin-top: 2vw;
+    padding: 1px 35vw;
+    color: #4d4d4d;
+    font-size:17px;
+}
+
 
 /* nav */
 
@@ -85,8 +180,8 @@ h14{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 2vw;
-    background-color: #f8f8f8;
+    padding: 1px 2vw;
+    background-color: rgba(248, 248, 248, 0.75);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -96,7 +191,7 @@ h14{
 }
 
 .navbar-logo img{
-    height: 5vw;
+    height: 97px;
 }
 
 .navbar-logo:hover {
@@ -170,4 +265,92 @@ h14{
 .register-btn:hover {
     color: #78a4e5;
     border-color: #9cc2f8;
+}
+
+
+ /*footer*/
+
+
+footer {
+    background-color: #ffffff;
+    margin-top: 7vw;
+    height: fit-content;
+}
+
+.flex-containerfooter {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.flex-itemfooter {
+    padding: 20px;
+    text-align: center;
+}
+
+.flex-itemfooter:hover {
+    color: #6991ba;
+    cursor: pointer;
+}
+
+.footerlogo {
+    width: 12vw;
+    margin: auto 2vw;
+}
+
+
+.rechten {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 0;
+    margin-top: 2vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+
+    .banner h1 {
+        font-size: 2rem;
+    }
+
+    .banner p {
+        font-size: 1rem;
+    }
+
+
+    .banner{
+        display: contents;
+        width: 90%;
+        color: #333;
+        text-align: left;
+        margin: 1vw 2vw;
+    }
+    .banner-text{
+        max-width: 400px;
+        padding: 40px;
+        text-align: left;
+    }
+    .banner-img{
+        width: 1000%;
+        max-width: 100%;
+        height: auto;
+        margin: 1vw auto;
+    }
+    .why-us{
+        padding: 8px 15vw;
+    }
 }

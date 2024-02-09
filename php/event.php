@@ -27,20 +27,15 @@
                     <img src="../media/logo.png"  class="navbar-logo" alt="Your Logo">
                 </a>
             </div>
-            <ul class="navbar-options">
-                <li><a href="#">Option 1</a></li>
-                <li><a href="#">Option 2</a></li>
-            </ul>
         </div>
         <div class="navbar-buttons">
             <a href="logout_process.php" class="register-btn">Logout</a>
         </div>
-    </nav>
+    </nav><br><br>
 
 
 </header>
 
-    <! --  placeholder name -->
 
     <div class="title-top">
         <h17>Event Name</h17>
@@ -53,7 +48,7 @@
     <div class="button-container">
             <a href="upload.php" class="modern-button">Upload photo's <i class="fa-solid fa-upload"></i></a>
 
-            <a href="https://example.com" id="downloadButton" class="modern-button">Download Photo's <i class="fa-solid fa-circle-arrow-down"></i></a>
+            <a href="" id="downloadButton" class="modern-button">Download Photo's <i class="fa-solid fa-circle-arrow-down"></i></a>
 
         </div>
 
@@ -326,25 +321,25 @@
 
  /* nav */
 
-    .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1px 40px;
-        background-color: #f8f8f8;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
 
+     .navbar {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         padding: 1px 2vw;
+         background-color: rgba(248, 248, 248, 0.75);
+         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+     }
 
-    .navbar-content-left {
-        display: flex;
-        align-items: center;
-    }
+     .navbar-content-left {
+         display: flex;
+         align-items: center;
+     }
 
+     .navbar-logo img{
+         height: 97px;
+     }
 
-    .navbar-logo img{
-        height: 5vw;
-    }
 
     .navbar-logo:hover {
         transform: scale(1.05);
