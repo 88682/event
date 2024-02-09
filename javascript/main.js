@@ -6,7 +6,7 @@ function alerts(a) {
     case 'loginfail':
         alert("Wrong username or password!"); 
     break;
-    case 'serverfail':
+    case 'servererror':
         alert("Server failed to do it's job..."); 
     break;
 }

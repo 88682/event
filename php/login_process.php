@@ -42,5 +42,5 @@ $conn->close();
   exit();
 } else {
   header('Location:../index.php?alert=servererror');
-  
+  exit();
 }
