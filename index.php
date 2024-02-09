@@ -22,6 +22,7 @@ else {
 }
 ?>
 
+
 <!DOCTYPE html>
 <html lang="nl-NL">
 
@@ -212,9 +213,9 @@ else {
     <div class="flex-containerfooter">
         <div class="flex-itemfooter"><i class="fa-regular fa-envelope"></i>: info@eventlens.nl</div>
         <div class="flex-itemfooter"><i class="fa-solid fa-phone"></i>: 0612345678</div>
-        <div class="flex-itemfooter"><i class="fa-brands fa-facebook"></i>: facebook@eventlens</div>
-        <div class="flex-itemfooter"><i class="fa-brands fa-instagram"></i>: insta@eventlens</div>
-        <div class="flex-itemfooter">   <i class="fa-brands fa-whatsapp"></i>: +3161234567</div>
+<!--        <div class="flex-itemfooter"><i class="fa-brands fa-facebook"></i>: facebook@eventlens</div>-->
+<!--        <div class="flex-itemfooter"><i class="fa-brands fa-instagram"></i>: insta@eventlens</div>-->
+<!--        <div class="flex-itemfooter">   <i class="fa-brands fa-whatsapp"></i>: +3161234567</div>-->
 
     </div>
 
