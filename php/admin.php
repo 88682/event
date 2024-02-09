@@ -77,9 +77,9 @@
             margin-bottom: 20px;
         }
 
-        input[type="text"],
+         input[type="text"],
         input[type="password"]{
-            width: 90%;
+            width: 97%;
             padding: 12px;
             margin-bottom: 10px;
             background-color: #f2f2f2;
@@ -94,8 +94,8 @@
             margin-bottom: 10px;
             border: none;
             border-radius: 3px;
-            background-color: #007bff;
-            color: #fff;
+            background-color: #88b5f6;
+            color: #333333;
             cursor: pointer;
             font-size: 1em;
             font-weight: bold;
