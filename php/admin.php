@@ -162,7 +162,7 @@
 </head>
 <body>
 <div>
-    <a href="index.php">
+    <a href="../index.php">
         <img src="../media/logo.png"  class="logo" alt="Your Logo">
     </a>
     <button class="button-logout"><span class="glyphicon glyphicon-log-out"></span>  Logout</button>
@@ -170,14 +170,14 @@
 
 <div class="container">
     <h2>Creat an event:</h2><br>
-    <form action="" method="post">
+    <form action="event_process.php" method="post">
         <label for="username">Event name:</label>
-        <input type="text" name="username" required minlength="5" placeholder="Name for the event"><br><br>
+        <input type="text" name="e_name" id="e_name" required minlength="3" placeholder="Name for the event"><br><br>
 
         <label for="username">Event code:</label>
-        <input type="text" name="username" required minlength="5" placeholder="Share this code later"><br><br>
+        <input type="text" name="e_pass" id="e_pass" required minlength="5" placeholder="Share this code later"><br><br>
 
-        <input type="submit" value="Save">
+        <input type="submit" name="e_submit" id="e_submit" value="Save">
     </form>
 </div>
 </body>

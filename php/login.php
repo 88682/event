@@ -137,13 +137,13 @@
     <h2>Login</h2>
     <form action="login_process.php" method="post">
         <label for="username">Username:</label>
-        <input type="text" name="username" required minlength="5"><br><br>
+        <input type="text" name="l_name" id="l_name" required minlength="3"><br><br>
 
         <label for="password">Password:</label>
-        <input type="password" name="password" required minlength="8"><br>
+        <input type="password" name="l_pass" id="l_pass" required minlength="5"><br>
 
         <a href="register.php" target="_blank">Don't have an account yet? Register</a><br><br><br>
-        <input type="submit" value="Login">
+        <input type="submit" name="l_submit" id="l_submit" value="Login">
     </form>
 </div>
 </body>

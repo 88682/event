@@ -3,6 +3,9 @@ function alerts(a) {
     case 'registered':
         alert("Your account has been created! Please log in."); 
     break;
+    case 'event':
+        alert("Event has been created."); 
+    break;
     case 'loginfail':
         alert("Wrong username or password!"); 
     break;

@@ -38,8 +38,8 @@ $_SESSION["liname"] = $lname;
 
 $conn->close();
 
-  header('Location:../index.php');
-  exit();
+header('Location:../index.php');
+exit();
 } else {
   header('Location:../index.php?alert=servererror');
   exit();

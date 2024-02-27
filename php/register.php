@@ -136,13 +136,25 @@
     <h2>Register</h2>
     <form action="register_process.php" method="post">
         <label for="username">New username:</label>
-        <input type="text" name="username" required minlength="5"><br><br>
+        <input type="text" name="r_name" id="r_name" required minlength="3"><br><br>
 
         <label for="password">New password:</label>
-        <input type="password" name="password" required minlength="8"><br>
+        <input type="password" name="r_pass" id="r_pass" required minlength="5"><br>
+
+        <script language='javascript' type='text/javascript'>
+              function check(input) {
+                  if (input.value != document.getElementById('r_pass').value) {
+                      input.setCustomValidity('Passwords did not match!');
+              } else {
+                  // input is valid -- reset the error message
+                  input.setCustomValidity('');
+              }
+              }
+              </script>
+              
 
         <a href="register.php" target="_blank">Have an account already? Login</a><br><br><br>
-        <input type="submit" value="Creat account">
+        <input type="submit" name="r_submit" id="r_submit" value="Create account">
     </form>
 </div>
 </body>
