@@ -24,6 +24,9 @@ body {
     font-family: Arial;
     color: #333333;
 }
+main{
+    display: table;
+}
 
 .banner {
     display: flex;
