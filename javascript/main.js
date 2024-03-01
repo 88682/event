@@ -18,5 +18,8 @@ function alerts(a) {
     case 'doublename':
         alert("This username already exists."); 
     break;
+    case 'uploaded':
+        alert("Photos were uploaded!"); 
+    break;
 }
 }

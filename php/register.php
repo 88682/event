@@ -166,10 +166,5 @@
         echo "alerts('". $_GET['alert']."')";
         echo "</script>";
     }
-    if (isset($_GET['page'])){
-        echo "<script>";
-        echo "divswitch('". $_GET['page']."')";
-        echo "</script>";
-    }
     ?>
 </html>

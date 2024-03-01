@@ -1,9 +1,10 @@
 <?php
+session_start();
+$_SESSION["coname"];
+$coname = $_SESSION["coname"];
 
-if($_SERVER['REQUEST_METHOD'] == 'POST'){
-    $bestand = $_FILES['foto_paspoort']['name'];
-    $tijdelijk = $_FILES['foto_paspoort']['tmp_name'];
-    $map = 'https://89133.stu.sd-lab.nl/event/media/fotos';
+if (!isset($_SESSION["coname"])){
+    header('Location:login.php');
 }
 
 ?>
@@ -141,23 +142,28 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 </a><br>
 <div class="container">
     <h2>Upload your event photo's</h2><br>
-    <form action="" method="post">
+    <form action="upload_process.php" method="post" enctype="multipart/form-data">
 
-        <label for="username">Name:</label>
-        <input type="text" name="name" required placeholder="Your name"><br><br>
+        <?php
+        session_start();
+        $_SESSION["liname"];
+        $liname = $_SESSION["liname"];
+        ?>
+        <label for="username"><?= $liname ?></label>
+        <input type="hidden" name="u_uploader" value="<?= $liname ?>" ><br><br>
 
         <label for="username">Date:</label><br>
-        <input type="date" name="date" required><br><br>
+        <input type="date" name="u_date" required><br><br>
 
 
         <div class="upload-container">
             <label for="photoInput" class="upload-button">
                 Choose Photos
             </label>
-            <input type="file" id="photoInput" class="hidden" accept="image/*" multiple onchange="handleFileSelect(event)">
+            <input type="file" id="photoInput" name="u_name" class="hidden" accept="image/*" multiple onchange="handleFileSelect(event)">
         </div>
 
-        <input type="submit" value="Upload">
+        <input type="submit" name="u_submit" id="u_submit" value="Upload">
     </form>
 </div>
 
@@ -165,4 +171,13 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 <!--  meer dan een foto uploaden -->
 <script src="morePhotos.js"></script>
 </body>
+
+<?php
+    if (isset($_GET['alert'])){
+        echo "<script>";
+        echo "alerts('". $_GET['alert']."')";
+        echo "</script>";
+    }
+    ?>
+
 </html>
