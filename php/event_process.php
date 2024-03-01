@@ -25,6 +25,22 @@ else {
   echo("<script>console.log('PHP: " . $data2 . "');</script>");
 }
 
+$sql = "SELECT code FROM event_codes WHERE code='$epass_enc'";
+$result = $conn->query($sql);
+if ($result->num_rows > 0) {
+  $conn->close();
+  header('Location:admin.php?alert=doublecode');
+  exit();
+}
+
+$sql = "SELECT event_name FROM event_codes WHERE event_name='$ename'";
+$result = $conn->query($sql);
+if ($result->num_rows > 0) {
+  $conn->close();
+  header('Location:admin.php?alert=doublename');
+  exit();
+}
+
 $sql = "INSERT INTO event_codes (code, event_name)
 VALUES ('$epass_enc', '$ename')";
 

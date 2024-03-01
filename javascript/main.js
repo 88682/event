@@ -16,7 +16,10 @@ function alerts(a) {
         alert("Wrong code."); 
     break;
     case 'doublename':
-        alert("This username already exists."); 
+        alert("This name already exists."); 
+    break;
+    case 'doublecode':
+        alert("This code already exists."); 
     break;
     case 'uploaded':
         alert("Photos were uploaded!"); 

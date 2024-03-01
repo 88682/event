@@ -24,6 +24,8 @@ else {
   $data2 = "Connected successfully";
   echo("<script>console.log('PHP: " . $data2 . "');</script>");
 }
+
+
 ?>
 
 <!DOCTYPE html>
@@ -68,7 +70,6 @@ else {
 
 $sql1 = "SELECT event_name FROM event_codes WHERE id = '$coname'";
 $result1 = $conn->query($sql1);
-$count = 0;
 ?>
 <?php
 
@@ -92,10 +93,7 @@ if ($result1->num_rows > 0) {
 
     <div class="button-container">
             <a href="upload.php" class="modern-button">Upload photo's <i class="fa-solid fa-upload"></i></a>
-
-            <!--<a href="" id="downloadButton" class="modern-button">Download Photo's <i class="fa-solid fa-circle-arrow-down"></i></a>-->
-
-        </div>
+    </div>
 
 
     <! --  fotos zijn place holders voor nu -->
@@ -106,7 +104,6 @@ if ($result1->num_rows > 0) {
 
         $sql1 = "SELECT id, photo_name, photo_uploader, upload_date FROM event_photos WHERE event_id = '$coname'";
         $result1 = $conn->query($sql1);
-        $count = 0;
         ?>
         <?php
 
@@ -129,18 +126,6 @@ if ($result1->num_rows > 0) {
                 }
             }
         ?>
-
-        <!--
-        <div class="photo">
-            <a href="../media/fotos/9.png" download="Photo9">
-                <img src="../media/fotos/9.png" alt="Photo 9">
-            </a>
-            <div class="name-date-container">
-                <p class="name">Name Person</p>
-                <p class="date">date </p>
-            </div>
-        </div>
-        -->
 
 
     </div>
