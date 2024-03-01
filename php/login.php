@@ -8,7 +8,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            padding: 9vw;
+            padding: 6vw;
             background-image: url("../media/background.jpg");
             background-position: center;
             background-repeat: no-repeat;
@@ -96,9 +96,8 @@
                 background-image: url("../media/background.jpg");
                 background-position: center;
                 background-repeat: no-repeat;
-                background-size: 110vw 150vh;
+                background-size: 130vw 110vh;
                 overflow-x: hidden;
-                overflow-y: hidden;
             }
 
             .logo {
@@ -110,7 +109,7 @@
             }
 
             .container {
-                max-width: 90%;
+                max-width: 80%;
             }
 
             input[type="text"],
@@ -123,7 +122,6 @@
                 border-radius: 3px;
                 color: #333;
             }
-
 
 
         }
@@ -144,6 +142,16 @@
 
         <a href="register.php" target="_blank">Don't have an account yet? Register</a><br><br><br>
         <input type="submit" name="l_submit" id="l_submit" value="Login">
+    </form><br>
+    <h2>Admin Login</h2>
+    <form action="login_process.php" method="post">
+        <label for="username">Username:</label>
+        <input type="text" name="l_name" id="l_name" required minlength="3"><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" name="l_pass" id="l_pass" required minlength="5">
+
+        <input type="submit" name="submit" id="" value="Login">
     </form>
 </div>
 </body>
