@@ -170,6 +170,7 @@ if (!isset($_SESSION["coname"])){
 
 <!--  meer dan een foto uploaden -->
 <script src="morePhotos.js"></script>
+<script src="../javascript/main.js"></script>
 </body>
 
 <?php
