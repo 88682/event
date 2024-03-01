@@ -140,19 +140,33 @@
         <label for="password">Password:</label>
         <input type="password" name="l_pass" id="l_pass" required minlength="5"><br>
 
-        <a href="register.php" target="_blank">Don't have an account yet? Register</a><br><br><br>
+        <a href="register.php">Don't have an account yet? Register</a><br><br><br>
         <input type="submit" name="l_submit" id="l_submit" value="Login">
     </form><br>
     <h2>Admin Login</h2>
-    <form action="login_process.php" method="post">
+    <form action="admin_process.php" method="post">
         <label for="username">Username:</label>
         <input type="text" name="l_name" id="l_name" required minlength="3"><br><br>
 
         <label for="password">Password:</label>
         <input type="password" name="l_pass" id="l_pass" required minlength="5">
 
-        <input type="submit" name="submit" id="" value="Login">
+        <input type="submit" name="l_submit" id="l_submit" value="Login">
     </form>
 </div>
 </body>
+
+<script src="../javascript/main.js"></script>
+<?php
+    if (isset($_GET['alert'])){
+        echo "<script>";
+        echo "alerts('". $_GET['alert']."')";
+        echo "</script>";
+    }
+    if (isset($_GET['page'])){
+        echo "<script>";
+        echo "divswitch('". $_GET['page']."')";
+        echo "</script>";
+    }
+    ?>
 </html>

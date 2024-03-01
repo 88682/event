@@ -2,10 +2,15 @@
 session_start();
 $_SESSION["liname"];
 
-if(isset($_POST['l_submit'])){
-  $lname = htmlspecialchars($_POST['l_name']);
-  $lpass = htmlspecialchars($_POST['l_pass']);
-  $lpass_enc = sha1($lpass);
+if (!isset($_SESSION["liname"])){
+  header('Location:login.php');
+}
+
+$_SESSION["coname"];
+
+if(isset($_POST['c_submit'])){
+  $ccode = $_POST['c_code'];
+  $ccode_enc = sha1($ccode);
 
 $servername = "localhost";
 $username = "89133";
@@ -19,28 +24,32 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
   $data1 = "Did not connect";
   echo("<script>console.log('PHP: " . $data1 . "');</script>");
+  header('Location:../index.php?alert=serverfail');
+  exit();
 }
 else {
   $data2 = "Connected successfully";
   echo("<script>console.log('PHP: " . $data2 . "');</script>");
 }
 
-$sql = "SELECT user_name, user_pass FROM event_users WHERE user_name='$lname' AND user_pass='$lpass_enc'";
+$event_id = null;
+$sql = "SELECT id FROM event_codes WHERE code='$ccode_enc'";
 $result = $conn->query($sql);
 if ($result->num_rows == 0) {
   $conn->close();
-  header('Location:../index.php?alert=loginfail');
+  header('Location:/eventcode.php?alert=codefail');
   exit();
 }
 
-$_SESSION["liname"] = $lname;
-
+while ($row = $result->fetch_assoc()) {
+  $_SESSION["coname"] = $row["id"];
+}
 
 $conn->close();
 
-header('Location:eventcode.php');
+header('Location:event.php');
 exit();
 } else {
-  header('Location:../index.php?alert=servererror');
-  exit();
+header('Location:../index.php?alert=serverfail');
+exit();
 }

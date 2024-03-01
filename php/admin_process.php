@@ -1,6 +1,6 @@
 <?php
 session_start();
-$_SESSION["liname"];
+$_SESSION["adname"];
 
 if(isset($_POST['l_submit'])){
   $lname = htmlspecialchars($_POST['l_name']);
@@ -25,7 +25,7 @@ else {
   echo("<script>console.log('PHP: " . $data2 . "');</script>");
 }
 
-$sql = "SELECT user_name, user_pass FROM event_users WHERE user_name='$lname' AND user_pass='$lpass_enc'";
+$sql = "SELECT admin_name, admin_pass FROM event_admins WHERE admin_name='$lname' AND admin_pass='$lpass_enc'";
 $result = $conn->query($sql);
 if ($result->num_rows == 0) {
   $conn->close();
@@ -33,12 +33,12 @@ if ($result->num_rows == 0) {
   exit();
 }
 
-$_SESSION["liname"] = $lname;
+$_SESSION["adname"] = $lname;
 
 
 $conn->close();
 
-header('Location:eventcode.php');
+header('Location:admin.php');
 exit();
 } else {
   header('Location:../index.php?alert=servererror');

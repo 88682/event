@@ -1,3 +1,31 @@
+<?php
+session_start();
+$_SESSION["adname"];
+$adname = $_SESSION["adname"];
+
+if (!isset($_SESSION["adname"])){
+    header('Location:login.php');
+}
+
+$servername = "localhost";
+$username = "89133";
+$password = "#1Geheim!";
+$dbname = "db89133";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Check connection
+if ($conn->connect_error) {
+  $data1 = "Did not connect";
+  echo("<script>console.log('PHP: " . $data1 . "');</script>");
+}
+else {
+  $data2 = "Connected successfully";
+  echo("<script>console.log('PHP: " . $data2 . "');</script>");
+}
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -165,7 +193,7 @@
     <a href="../index.php">
         <img src="../media/logo.png"  class="logo" alt="Your Logo">
     </a>
-    <button class="button-logout"><span class="glyphicon glyphicon-log-out"></span>  Logout</button>
+    <button class="button-logout" onclick="window.location.href='logout_process.php'"><span class="glyphicon glyphicon-log-out"></span>  Logout</button>
 </div>
 
 <div class="container">
@@ -181,4 +209,18 @@
     </form>
 </div>
 </body>
+
+<script src="../javascript/main.js"></script>
+<?php
+    if (isset($_GET['alert'])){
+        echo "<script>";
+        echo "alerts('". $_GET['alert']."')";
+        echo "</script>";
+    }
+    if (isset($_GET['page'])){
+        echo "<script>";
+        echo "divswitch('". $_GET['page']."')";
+        echo "</script>";
+    }
+    ?>
 </html>

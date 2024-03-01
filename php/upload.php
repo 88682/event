@@ -1,3 +1,13 @@
+<?php
+
+if($_SERVER['REQUEST_METHOD'] == 'POST'){
+    $bestand = $_FILES['foto_paspoort']['name'];
+    $tijdelijk = $_FILES['foto_paspoort']['tmp_name'];
+    $map = 'https://89133.stu.sd-lab.nl/event/media/fotos';
+}
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>

@@ -153,9 +153,23 @@
               </script>
               
 
-        <a href="register.php" target="_blank">Have an account already? Login</a><br><br><br>
+        <a href="login.php">Have an account already? Login</a><br><br><br>
         <input type="submit" name="r_submit" id="r_submit" value="Create account">
     </form>
 </div>
 </body>
+
+<script src="../javascript/main.js"></script>
+<?php
+    if (isset($_GET['alert'])){
+        echo "<script>";
+        echo "alerts('". $_GET['alert']."')";
+        echo "</script>";
+    }
+    if (isset($_GET['page'])){
+        echo "<script>";
+        echo "divswitch('". $_GET['page']."')";
+        echo "</script>";
+    }
+    ?>
 </html>

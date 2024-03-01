@@ -1,3 +1,31 @@
+<?php
+session_start();
+$_SESSION["liname"];
+$liname = $_SESSION["liname"];
+
+if (!isset($_SESSION["liname"])){
+    header('Location:login.php');
+}
+
+$servername = "localhost";
+$username = "89133";
+$password = "#1Geheim!";
+$dbname = "db89133";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Check connection
+if ($conn->connect_error) {
+  $data1 = "Did not connect";
+  echo("<script>console.log('PHP: " . $data1 . "');</script>");
+}
+else {
+  $data2 = "Connected successfully";
+  echo("<script>console.log('PHP: " . $data2 . "');</script>");
+}
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -136,14 +164,28 @@
     <img src="../media/logo.png" class="logo" alt="Your Logo">
 </a>
 <div class="container">
-    <h2>Welkom $(name_logged_in)</h2><br>
-    <form action="" method="post">
+    <h2>Welkom <?= $_SESSION["liname"] ?></h2><br>
+    <form action="code_process.php" method="post">
 
         <label for="username">Code:</label>
-        <input type="text" name="username" required minlength="5" placeholder="Code you got from the admin"><br><br>
+        <input type="text" name="c_code" id="c_code" required minlength="5" placeholder="Code you got from the admin"><br><br>
 
-        <input type="submit" value="Find">
+        <input type="submit" name="c_submit" id="c_submit" value="Find">
     </form>
 </div>
 </body>
+
+<script src="../javascript/main.js"></script>
+<?php
+    if (isset($_GET['alert'])){
+        echo "<script>";
+        echo "alerts('". $_GET['alert']."')";
+        echo "</script>";
+    }
+    if (isset($_GET['page'])){
+        echo "<script>";
+        echo "divswitch('". $_GET['page']."')";
+        echo "</script>";
+    }
+    ?>
 </html>

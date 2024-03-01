@@ -12,5 +12,11 @@ function alerts(a) {
     case 'servererror':
         alert("Server failed to do it's job..."); 
     break;
+    case 'codefail':
+        alert("Wrong code."); 
+    break;
+    case 'doublename':
+        alert("This username already exists."); 
+    break;
 }
 }

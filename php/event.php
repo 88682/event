@@ -1,3 +1,31 @@
+<?php
+session_start();
+$_SESSION["coname"];
+$coname = $_SESSION["coname"];
+
+if (!isset($_SESSION["coname"])){
+    header('Location:login.php');
+}
+
+$servername = "localhost";
+$username = "89133";
+$password = "#1Geheim!";
+$dbname = "db89133";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Check connection
+if ($conn->connect_error) {
+  $data1 = "Did not connect";
+  echo("<script>console.log('PHP: " . $data1 . "');</script>");
+}
+else {
+  $data2 = "Connected successfully";
+  echo("<script>console.log('PHP: " . $data2 . "');</script>");
+}
+?>
+
 <!DOCTYPE html>
 <html lang="nl-NL">
 
@@ -36,11 +64,28 @@
 
 </header>
 
+<?php
+
+$sql1 = "SELECT event_name FROM event_codes WHERE id = '$coname'";
+$result1 = $conn->query($sql1);
+$count = 0;
+?>
+<?php
+
+if ($result1->num_rows > 0) {
+    // output data of each row
+    while ($row = $result1->fetch_assoc()) {
+        ?>
 
     <div class="title-top">
-        <h17>Event Name</h17>
+        <h17><?= $row ["event_name"] ?></h17>
         <p>Click on the photo you want to download</p>
     </div>
+
+    <?php
+                }
+            }
+        ?>
 
     <div class="banner"><br><br>
 
@@ -48,7 +93,7 @@
     <div class="button-container">
             <a href="upload.php" class="modern-button">Upload photo's <i class="fa-solid fa-upload"></i></a>
 
-            <a href="" id="downloadButton" class="modern-button">Download Photo's <i class="fa-solid fa-circle-arrow-down"></i></a>
+            <!--<a href="" id="downloadButton" class="modern-button">Download Photo's <i class="fa-solid fa-circle-arrow-down"></i></a>-->
 
         </div>
 
@@ -57,86 +102,35 @@
 
     <div class="photo-album">
 
-        <div class="photo">
-            <a href="../media/fotos/1.png" download="Photo1">
-                <img src="../media/fotos/1.png" alt="Photo 1">
-            </a>
-            <div class="name-date-container">
-                <p class="name">Name Person</p>
-                <p class="date">date </p>
-            </div>
-        </div>
+            <?php
 
-        <div class="photo">
-            <a href="../media/fotos/2.png" download="Photo2">
-                <img src="../media/fotos/2.png" alt="Photo 2">
-            </a>
-            <div class="name-date-container">
-                <p class="name">Name Person</p>
-                <p class="date">date </p>
-            </div>
-        </div>
+        $sql1 = "SELECT id, photo_name, photo_uploader, upload_date FROM event_photos WHERE event_id = '$coname'";
+        $result1 = $conn->query($sql1);
+        $count = 0;
+        ?>
+        <?php
 
-        <div class="photo">
-            <a href="../media/fotos/3.png" download="Photo3">
-                <img src="../media/fotos/3.png" alt="Photo 3">
-            </a>
-            <div class="name-date-container">
-                <p class="name">Name Person</p>
-                <p class="date">date </p>
-            </div>
-        </div>
+        if ($result1->num_rows > 0) {
+            // output data of each row
+            while ($row = $result1->fetch_assoc()) {
+                $divid = $row ["id"];
+                ?>
 
-        <div class="photo">
-            <a href="../media/fotos/4.png" download="Photo4">
-                <img src="../media/fotos/4.png" alt="Photo 4">
-            </a>
+            <div class="photo" id="photoDiv<?= $row['id']?>">
+                <a href="../media/fotos/<?= $row['photo_name']?>" download="<?= $row['photo_name']?>">
+                <img src="../media/fotos/<?= $row['photo_name']?>" alt="<?= $row['photo_name']?>">
+                </a>
             <div class="name-date-container">
-                <p class="name">Name Person</p>
-                <p class="date">date </p>
+                <p class="name"><?= $row ["photo_uploader"] ?></p>
+                <p class="date"><?= $row ["upload_date"] ?></p>
             </div>
-        </div>
-
-        <div class="photo">
-            <a href="../media/fotos/5.png" download="Photo5">
-                <img src="../media/fotos/5.png" alt="Photo 5">
-            </a>
-            <div class="name-date-container">
-                <p class="name">Name Person</p>
-                <p class="date">date </p>
             </div>
-        </div>
+                <?php
+                }
+            }
+        ?>
 
-        <div class="photo">
-            <a href="../media/fotos/6.png" download="Photo6">
-                <img src="../media/fotos/6.png" alt="Photo 6">
-            </a>
-            <div class="name-date-container">
-                <p class="name">Name Person</p>
-                <p class="date">date </p>
-            </div>
-        </div>
-
-        <div class="photo">
-            <a href="../media/fotos/7.png" download="Photo7">
-                <img src="../media/fotos/7.png" alt="Photo 7">
-            </a>
-            <div class="name-date-container">
-                <p class="name">Name Person</p>
-                <p class="date">date </p>
-            </div>
-        </div>
-
-        <div class="photo">
-            <a href="../media/fotos/8.png" download="Photo8">
-                <img src="../media/fotos/8.png" alt="Photo 8">
-            </a>
-            <div class="name-date-container">
-                <p class="name">Name Person</p>
-                <p class="date">date </p>
-            </div>
-        </div>
-
+        <!--
         <div class="photo">
             <a href="../media/fotos/9.png" download="Photo9">
                 <img src="../media/fotos/9.png" alt="Photo 9">
@@ -146,12 +140,10 @@
                 <p class="date">date </p>
             </div>
         </div>
+        -->
 
 
     </div>
-
-
-
 </div>
 
 
@@ -450,5 +442,19 @@
 
 </style>
 </body>
+
+<script src="../javascript/main.js"></script>
+<?php
+    if (isset($_GET['alert'])){
+        echo "<script>";
+        echo "alerts('". $_GET['alert']."')";
+        echo "</script>";
+    }
+    if (isset($_GET['page'])){
+        echo "<script>";
+        echo "divswitch('". $_GET['page']."')";
+        echo "</script>";
+    }
+    ?>
 
 </html>

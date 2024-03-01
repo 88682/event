@@ -7,7 +7,8 @@ session_unset();
 // destroy the session
 session_destroy();
 
-$_SESSION["liname"] = NULL;
+$_SESSION["liname"] = null;
+$_SESSION["adname"] = null;
 
 header('Location:../index.php');
 ?>

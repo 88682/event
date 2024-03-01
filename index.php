@@ -62,7 +62,7 @@ else {
         <!--User page not yet implemented-->
         <?php if (isset($_SESSION["liname"])){ ?>
             <div class="navbar-buttons">
-            <a href="php/login.php" class="login-btn"><?= $_SESSION["liname"] ?></a>
+            <a href="php/eventcode.php" class="login-btn"><?= $_SESSION["liname"] ?></a>
             <a href="php/logout_process.php" class="register-btn">Logout</a>
             </div>
 

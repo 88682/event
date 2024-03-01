@@ -25,6 +25,14 @@ else {
   echo("<script>console.log('PHP: " . $data2 . "');</script>");
 }
 
+$sql = "SELECT user_name FROM event_users WHERE user_name='$rname'";
+$result = $conn->query($sql);
+if ($result->num_rows > 0) {
+  $conn->close();
+  header('Location:register.php?alert=doublename');
+  exit();
+}
+
 $sql = "INSERT INTO event_users (user_name, user_pass)
 VALUES ('$rname', '$rpass_enc')";
 
